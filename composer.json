@@ -27,7 +27,6 @@
             "main.php"
         ],
         "classmap": [
-            "src/Capcha.php"
         ],
         "psr-4": {
             "Difra\\Boostrap\\": "src"
