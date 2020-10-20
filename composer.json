@@ -1,0 +1,35 @@
+{
+    "name": "difra/bootstrap4",
+    "description": "Bootstrap 4 plugin for Difra framework",
+    "type": "library",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Eduard Kutuev",
+            "email": "ed@napych.com"
+        }
+    ],
+    "require": {
+    },
+    "dist": {
+        "url": "https://github.com/difra-org/bootstrap4/archive/1.0.0.zip",
+        "type": "zip"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:difra-org/bootstrap4.git"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "main.php"
+        ],
+        "classmap": [
+            "src/Capcha.php"
+        ],
+        "psr-4": {
+            "Difra\\Boostrap\\": "src"
+        }
+    }
+}
