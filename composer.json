@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "twbs/bootstrap": "4.*"
     },
     "dist": {
         "url": "https://github.com/difra-org/bootstrap4/archive/1.0.0.zip",
