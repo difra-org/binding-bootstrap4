@@ -29,7 +29,7 @@
         "classmap": [
         ],
         "psr-4": {
-            "Difra\\Boostrap\\": "src"
+            "Difra\\Boostrap4\\": "src"
         }
     }
 }

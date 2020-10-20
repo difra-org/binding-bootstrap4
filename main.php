@@ -1,3 +1,3 @@
 <?php
 
-\Difra\Bootstrap\Plugin::enable();
+\Difra\Bootstrap4\Plugin::enable();
