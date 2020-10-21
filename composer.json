@@ -1,6 +1,6 @@
 {
     "name": "difra/bootstrap4",
-    "description": "Bootstrap 4 plugin for Difra framework",
+    "description": "Bootstrap 4 bindings for Difra framework",
     "type": "library",
     "license": "BSD-2-Clause",
     "authors": [
@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "difra/jquery3": "*",
         "twbs/bootstrap": "4.*"
     },
     "dist": {
