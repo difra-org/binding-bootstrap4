@@ -3,6 +3,7 @@
 namespace Difra\Bootstrap4;
 
 use Difra\Controller;
+use Difra\Debugger;
 use Difra\Envi\Action;
 use Difra\Events\Event;
 
@@ -23,8 +24,13 @@ class Plugin extends \Difra\Plugin
     public static function addHTML(Event $event)
     {
         $html = Action::getController()->html;
-        $html->getHead()->addStylesheet('/bootstrap4/css/bootstrap.css');
-        $html->getBody()->addScript('/bootstrap4/js/bootstrap.js');
+        if (!Debugger::isEnabled()) {
+            $html->getHead()->addStylesheet('/bootstrap4/css/bootstrap.min.css');
+            $html->getBody()->addScript('/bootstrap4/js/bootstrap.min.js');
+        } else {
+            $html->getHead()->addStylesheet('/bootstrap4/css/bootstrap.css');
+            $html->getBody()->addScript('/bootstrap4/js/bootstrap.js');
+        }
     }
 }
 
