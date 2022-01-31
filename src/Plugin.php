@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Difra\Bootstrap4;
 
-use Difra\Controller;
 use Difra\Debugger;
 use Difra\Envi\Action;
 use Difra\Events\Event;
@@ -15,12 +16,17 @@ class Plugin extends \Difra\Plugin
 {
     /**
      * @inheritdoc
+     * @throws \Difra\Exception
      */
-    protected function init()
+    protected function init(): void
     {
         \Difra\Events\System::getInstance(Event::EVENT_RENDER_INIT)->registerHandler([static::class, 'addHTML']);
     }
 
+    /**
+     * @throws \Difra\Exception
+     * @throws \Difra\View\HttpError
+     */
     public static function addHTML(Event $event)
     {
         $html = Action::getController()->html;
