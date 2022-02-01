@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "difra/binding-jquery3": "*",
+        "difra/binding-jquery3": "~8.0.0",
         "twbs/bootstrap": "4.*"
     },
     "dist": {
