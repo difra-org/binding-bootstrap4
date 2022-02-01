@@ -20,7 +20,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:difra-org/bootstrap4.git"
+            "url": "git@github.com:difra-org/binding-bootstrap4.git"
         }
     ],
     "autoload": {
