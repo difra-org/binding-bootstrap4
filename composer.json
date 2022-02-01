@@ -1,20 +1,20 @@
 {
-    "name": "difra/bootstrap4",
-    "description": "Bootstrap 4 bindings for Difra framework",
+    "name": "difra/binding-bootstrap4",
+    "description": "Bootstrap 4 bindings for Difra",
     "type": "library",
     "license": "BSD-2-Clause",
     "authors": [
         {
-            "name": "Eduard Kutuev",
+            "name": "Ed Kutuev",
             "email": "ed@napych.com"
         }
     ],
     "require": {
-        "difra/jquery3": "*",
+        "difra/binding-jquery3": "*",
         "twbs/bootstrap": "4.*"
     },
     "dist": {
-        "url": "https://github.com/difra-org/bootstrap4/archive/1.0.1.zip",
+        "url": "https://github.com/difra-org/bootstrap4/archive/8.0.0.zip",
         "type": "zip"
     },
     "repositories": [
