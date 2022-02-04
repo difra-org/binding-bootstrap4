@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "difra/lib-events": "~8.0.0",
         "difra/binding-jquery3": "~8.0.0",
         "twbs/bootstrap": "4.*"
     },
